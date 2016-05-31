@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HideTheGuitars_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1511" translatesAutoresizingMaskIntoConstraints="NO" id="QgR-zp-tnJ">
+                                <rect key="frame" x="-7" y="20" width="327" height="548"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmu-2N-l1J">
+                                <rect key="frame" x="29" y="447" width="96" height="55"/>
+                                <state key="normal" title="Hide me"/>
+                                <connections>
+                                    <action selector="hideRedGuitar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UWU-eJ-fcl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSH-hG-zMU">
+                                <rect key="frame" x="207" y="460" width="57" height="30"/>
+                                <state key="normal" title="Hide me"/>
+                                <connections>
+                                    <action selector="hideBlackGuitar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cze-00-z2v"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hide-the-Guitars" translatesAutoresizingMaskIntoConstraints="NO" id="A0q-7y-qec">
+                                <rect key="frame" x="33" y="114" width="254" height="63"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rGtr" translatesAutoresizingMaskIntoConstraints="NO" id="d5G-aE-83F">
+                                <rect key="frame" x="20" y="195" width="113" height="237"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bGtr" translatesAutoresizingMaskIntoConstraints="NO" id="7GV-bk-2Tl">
+                                <rect key="frame" x="176" y="195" width="111" height="237"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PM5-ES-TyG">
+                                <rect key="frame" x="40" y="492" width="75" height="30"/>
+                                <state key="normal" title="Unhide me"/>
+                                <connections>
+                                    <action selector="unhideRedGuitar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ph5-io-cNi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acD-Yr-fW4">
+                                <rect key="frame" x="198" y="492" width="75" height="30"/>
+                                <state key="normal" title="Unhide me"/>
+                                <connections>
+                                    <action selector="unhideBlackGuitar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IFa-Fi-if5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="blackGuitar" destination="7GV-bk-2Tl" id="e2F-r8-yiE"/>
+                        <outlet property="hideMe1" destination="jmu-2N-l1J" id="Evw-Ui-3aF"/>
+                        <outlet property="hideMe2" destination="eSH-hG-zMU" id="MqB-nw-UpM"/>
+                        <outlet property="redGuitar" destination="d5G-aE-83F" id="zVz-b2-Cb4"/>
+                        <outlet property="unhide1" destination="PM5-ES-TyG" id="784-jV-AUA"/>
+                        <outlet property="unhide2" destination="acD-Yr-fW4" id="QJI-Ux-YmU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="312" y="357"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1511" width="1200" height="1200"/>
+        <image name="Hide-the-Guitars" width="881" height="98"/>
+        <image name="bGtr" width="1033" height="2627"/>
+        <image name="rGtr" width="2183" height="5282"/>
+    </resources>
+</document>
